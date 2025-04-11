@@ -32,6 +32,7 @@ scene.add(rightPaddle);
 const ballGeometry = new THREE.SphereGeometry(0.2, 32, 32);
 const ballMaterial = new THREE.MeshBasicMaterial({ color: 'white' });
 const ball = new THREE.Mesh(ballGeometry, ballMaterial);
+ball.scale.set(2,2,2)
 ball.position.set(0, 0.2, 0);
 scene.add(ball);
 
